@@ -25,7 +25,7 @@ public class PutRequest {
 	                .header("", "")
 	                .body(jsonObject.toJSONString())
 	                .when()
-	                .post("/api/users")
+	                .put("/api/users")
 	                .then()
 	                .statusCode(200);
 
